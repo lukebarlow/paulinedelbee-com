@@ -1,6 +1,7 @@
 <html>
   <meta charset="UTF-8">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
 
 :root {
@@ -35,7 +36,6 @@ body, html {
 #content {
   position: fixed;
   top: 180px;
- 
   font-family: Grotesque MT Std, sans-serif;
   font-size: 20pt;
 }
@@ -60,7 +60,7 @@ body, html {
   padding: var(--margin);
 }
 
-#main {
+#main:hover {
   background-image: url(./hockney_3.jpg);
   background-size: cover;
 }
@@ -118,9 +118,12 @@ img {
 }
 
 @media only screen and (max-width: 1100px) {
+
+
   #content {
     font-size: 18pt;
   }
+
 }
 
 @media only screen and (max-width: 940px) {
@@ -139,6 +142,26 @@ img {
   }
 }
 
+@media only screen and (max-width: 500px) {
+
+  :root {
+    --margin: 50px;
+  }
+
+  #content {
+    font-size: 10pt;
+    top: 130px;
+  }
+
+  .heading {
+    font-size: 10pt;
+  }
+
+  .footer {
+    font-size: 9pt;
+  }
+}
+
     </style>
 
   </head>
@@ -150,13 +173,13 @@ img {
       <div class="heading" id="top-right">ENFANT<br /> ET ADULTE</div>
       <div id="main"><span class="sentence">Devenir ce que nous sommes en nous libérant du poids social de notre monde, voilà l’invitation que nous adresse la psychanalyse.</span> <span class="sentence">Diplômée de la Sigmund Freud University, Pauline d’Elbée exerce dans la mouvance des psychothérapies intégratives : un modèle qui cherche à s’adapter à la personnalité du sujet ainsi qu’à la nature de sa demande.</span> <span class="sentence">Elle se rapproche plus spécifiquement de la psychanalyse, pour qui le destin de chaque être humain tient dans son rapport au langage : parler pour penser et non l’inverse, écouter et entendre nos rêves, nos lapsus ou notre corps, pour dépasser nos blessures profondes qui nous empêchent de vivre.</span></div>
       <!-- <img src="exhi039349_rgb_0.jpg" /> -->
-      <div id="bottom-left">
+      <div id="bottom-left" class="footer">
 <span id="name">Pauline d’Elbee</span><br />
 <span id="address">58 south Molton street<br />
 Mayfair<br />
 London w1k 5SL<br /></span>
       </div>
-      <div id="bottom-right">
+      <div id="bottom-right" class="footer">
 Prendre rendez-vous:<br />
 <span id="phone-number">+44(0)2077061997</span><br />
 <span class="small-print">Secretariat ouvert du Lundi au Vendredi: 9am– 9.30pm</span><br />
