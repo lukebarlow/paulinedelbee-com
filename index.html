@@ -1,0 +1,176 @@
+<html>
+  <meta charset="UTF-8">
+  <head>
+    <style>
+
+:root {
+  --margin: 60px;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+@font-face {
+  font-family: 'Grotesque MT Std';
+  src: url('font/GrotesqueMTStd-Light.eot');
+  src: url('font/GrotesqueMTStd-Light.eot?#iefix') format('embedded-opentype'),
+    url('font/GrotesqueMTStd-Light.woff2') format('woff2'),
+    url('font/GrotesqueMTStd-Light.woff') format('woff'),
+    url('font/GrotesqueMTStd-Light.ttf') format('truetype'),
+    url('font/GrotesqueMTStd-Light.svg#GrotesqueMTStd-Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+
+
+
+.heading {
+  font-size: 22pt;
+}
+
+#content {
+  position: fixed;
+  top: 180px;
+ 
+  font-family: Grotesque MT Std, sans-serif;
+  font-size: 20pt;
+}
+
+#top-left {
+  text-align: left;
+  position: fixed;
+  left: var(--margin);
+  top: var(--margin);
+}
+
+#top-right {
+  text-align: right;
+  position: fixed;
+  right: var(--margin);
+  top: var(--margin);
+}
+
+#main {
+  text-align: justify;
+  text-justify: inter-word;
+  padding: var(--margin);
+}
+
+#main {
+  background-image: url(./hockney_3.jpg);
+  background-size: cover;
+}
+
+#bottom-left {
+  text-align: left;
+  position: fixed;
+  left: var(--margin);
+  bottom: var(--margin);
+}
+
+#bottom-right {
+  text-align: right;
+  position: fixed;
+  right: var(--margin);
+  bottom: var(--margin);
+}
+
+#name:hover {
+  color: rgb(255, 217, 3);
+}
+
+#address:hover {
+  color: rgb(0, 0, 255);
+}
+
+#phone-number:hover {
+  color: rgb(0, 204, 24);
+}
+
+#email:hover {
+  color: rgb(180, 0, 166);
+}
+
+.small-print {
+  font-size: 50%;
+}
+
+.sentence:hover {
+  font-style: italic;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  width: 100%;
+  max-width: 700px;
+}
+
+@media only screen and (max-width: 1100px) {
+  #content {
+    font-size: 18pt;
+  }
+}
+
+@media only screen and (max-width: 940px) {
+  #content {
+    font-size: 14pt;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  #content {
+    font-size: 12pt;
+  }
+
+  .heading {
+    font-size: 16pt;
+  }
+}
+
+    </style>
+
+  </head>
+  <body>
+
+    <div id="content">
+
+      <div class="heading" id="top-left">PSYCHANALYSE<br /> ET PSYCHOTHERAPIE</div>
+      <div class="heading" id="top-right">ENFANT<br /> ET ADULTE</div>
+      <div id="main"><span class="sentence">Devenir ce que nous sommes en nous libérant du poids social de notre monde, voilà l’invitation que nous adresse la psychanalyse.</span> <span class="sentence">Diplômée de la Sigmund Freud University, Pauline d’Elbée exerce dans la mouvance des psychothérapies intégratives : un modèle qui cherche à s’adapter à la personnalité du sujet ainsi qu’à la nature de sa demande.</span> <span class="sentence">Elle se rapproche plus spécifiquement de la psychanalyse, pour qui le destin de chaque être humain tient dans son rapport au langage : parler pour penser et non l’inverse, écouter et entendre nos rêves, nos lapsus ou notre corps, pour dépasser nos blessures profondes qui nous empêchent de vivre.</span></div>
+      <!-- <img src="exhi039349_rgb_0.jpg" /> -->
+      <div id="bottom-left">
+<span id="name">Pauline d’Elbee</span><br />
+<span id="address">58 south Molton street<br />
+Mayfair<br />
+London w1k 5SL<br /></span>
+      </div>
+      <div id="bottom-right">
+Prendre rendez-vous:<br />
+<span id="phone-number">+44(0)2077061997</span><br />
+<span class="small-print">Secretariat ouvert du Lundi au Vendredi: 9am– 9.30pm</span><br />
+<a id="email" href="mailto:psy@paulinedelbee.com">psy@paulinedelbee.com</a><br />
+
+        <!-- +44 (0)207 706 1997<br />
+        <a href="http://58southmoltonstreet.co.uk">58southmoltonstreet.co.uk</a>
+        <br />
+        <a href="mailto:psy@paulinedelbee.com">psy@paulinedelbee.com</a><br />
+        +44 (0)7476 720 020 -->
+      </div>
+
+
+    </div>
+
+  </body>
+</html>

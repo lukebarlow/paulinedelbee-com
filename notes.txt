@@ -1,0 +1,22 @@
+I’ve made a preview here: http://www.en-silence.be/pauline2.html
+But lots of things are simulated or wrong so can you please code the website from the instructions bellow?
+I hope it helps to understand anyway the italic effect and background image (by rolling over PSYCHANALYSE ET PSYCHOTHERAPIE, even though it actually has to be when rollover the main text)
+
+____
+
+
+- Image appears when rollover the main text. 
+- Each sentences separately in italic when rollover (they all have the same effect with the background image)
+- Image should be full width and cropped 60px above and bellow the main text
+- Fade in and fade out of the image: 5scd
+
+
+
+LINKS:
+
+http://58southmoltonstreet.co.uk 
+goes to 
+https://58southmoltonstreet.co.uk/therapist/pauline-delbee/
+
+google map link
+https://www.google.com/maps/place/58+S+Molton+St,+Mayfair,+London+W1K+5SL,+UK/@51.51397,-0.1498933,18z/data=!4m5!3m4!1s0x4876052c9899c499:0xcef13f985fc8c54e!8m2!3d51.5135594!4d-0.147254
