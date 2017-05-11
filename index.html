@@ -2,6 +2,7 @@
   <meta charset="UTF-8">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.8.0/d3.js"></script>
     <style>
 
 :root {
@@ -14,6 +15,13 @@ body, html {
   padding: 0px;
   margin: 0px;
 }
+
+/*width 1439 for the this setting
+*/
+
+/*body {
+  background-image: url(paulinedelbee-com7.png);
+}*/
 
 @font-face {
   font-family: 'Grotesque MT Std';
@@ -28,73 +36,65 @@ body, html {
 }
 
 .heading {
-  font-size: 22pt;
+  font-size: 30pt;
+  top: 58px;
 }
 
 #content {
-  position: fixed;
-  top: 180px;
+  margin-top: 197px;
   font-family: Grotesque MT Std, sans-serif;
-  font-size: 20pt;
+  font-size: 30pt;
 }
 
 #top-left {
   text-align: left;
-  position: fixed;
+  position: absolute;
   left: var(--margin);
-  top: var(--margin);
 }
 
 #top-right {
   text-align: right;
-  position: fixed;
+  position: absolute;
   right: var(--margin);
-  top: var(--margin);
 }
 
 #main {
   text-align: justify;
   text-justify: inter-word;
   padding: var(--margin);
-  transition: background-image 1s;
+  padding-bottom: 47px;
 }
 
-/*#main:hover {
-  background-image: url(./bg.jpg);
-  
-}*/
-
-#main::before {
-  content: "";
+#main-bg {
   position: absolute;
-  top: 0; 
-  left: 0;
-  width: 100%; 
-  height: 100%;  
-  opacity: 0.0; 
-  z-index: -1;
   background: url(./bg.jpg);
-  transition: opacity 5s;
   background-size: cover;
+  width: 100px;
+  height: 100px;
+  z-index: -1;
+  opacity: 0.0;
+  transition: opacity 5s;
 }
 
-#main:hover::before {
+#main-container:hover #main-bg {
   opacity: 1;
 }
 
-
 #bottom-left {
+  margin-left: var(--margin);
+  float: left;
   text-align: left;
-  position: fixed;
-  left: var(--margin);
-  bottom: var(--margin);
 }
 
 #bottom-right {
+  margin-right: var(--margin);
+  float: right;
   text-align: right;
-  position: fixed;
   right: var(--margin);
-  bottom: var(--margin);
+}
+
+.footer {
+  margin-top: 53px;
 }
 
 #name:hover {
@@ -135,51 +135,58 @@ img {
   max-width: 700px;
 }
 
-@media only screen and (max-width: 1100px) {
+/* for very big screens we up some sizes */
 
-
-  #content {
-    font-size: 18pt;
-  }
-}
-
-@media only screen and (max-width: 940px) {
-  #content {
-    font-size: 14pt;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  #content {
-    font-size: 12pt;
-  }
-
+@media only screen and (min-width: 1610px) {
   .heading {
-    font-size: 16pt;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-
-  body { cursor: pointer }
-
-  :root {
-    --margin: 40px;
+    font-size: 41.4pt;
   }
 
   #content {
-    font-size: 10pt;
-    top: 110px;
+    margin-top: 230px;
+    font-size: 41.4pt;
+  }
+}
+
+/* medium small */
+
+@media only screen and (max-width: 1250px) {
+  .heading {
+    font-size: 18.7pt;
   }
 
-  .heading {
-    font-size: 10pt;
+  #content {
+    margin-top: 170px;
+    font-size: 18.7pt;
   }
 
   .footer {
-    font-size: 9pt;
+    margin-top: 80px;
   }
 }
+
+
+@media only screen and (max-width: 800px) {
+  .heading {
+    font-size: 12pt;
+  }
+
+  #content {
+    margin-top: 155px;
+    font-size: 12pt;
+  }
+
+  .footer {
+    margin-top: 80px;
+  }
+
+  .heading {
+    top: 62px;
+  }
+}
+
+
+
 
     </style>
 
@@ -190,8 +197,10 @@ img {
 
       <div class="heading" id="top-left">PSYCHANALYSE<br /> ET PSYCHOTHERAPIE</div>
       <div class="heading" id="top-right">ENFANT<br /> ET ADULTE</div>
+      <span id="main-container">
+      <div id="main-bg"></div>
       <div id="main"><span class="sentence">Devenir ce que nous sommes en nous libérant du poids social de notre monde, voilà l’invitation que nous adresse la psychanalyse.</span> <span class="sentence">Diplômée de la Sigmund Freud University, Pauline d’Elbée exerce dans la mouvance des psychothérapies intégratives : un modèle qui cherche à s’adapter à la personnalité du sujet ainsi qu’à la nature de sa demande.</span> <span class="sentence">Elle se rapproche plus spécifiquement de la psychanalyse, pour qui le destin de chaque être humain tient dans son rapport au langage : parler pour penser et non l’inverse, écouter et entendre nos rêves, nos lapsus ou notre corps, pour dépasser nos blessures profondes qui nous empêchent de vivre.</span></div>
-      
+      </span>
       <div id="bottom-left" class="footer">
 <a id="name" href="https://58southmoltonstreet.co.uk/therapist/pauline-delbee/">Pauline d’Elbee</a><br />
 <a id="address" href="https://www.google.com/maps/place/58+S+Molton+St,+Mayfair,+London+W1K+5SL,+UK/@51.51397,-0.1498933,18z/data=!4m5!3m4!1s0x4876052c9899c499:0xcef13f985fc8c54e!8m2!3d51.5135594!4d-0.147254">58 south Molton street<br />
@@ -204,6 +213,21 @@ au secretariat: <span id="phone-number">+44(0)2077061997</span><br />
 ou par email: <a id="email" href="mailto:psy@paulinedelbee.com">psy@paulinedelbee.com</a><br />
       </div>
     </div>
+  <script>
 
+function fixBgSize() {
+  var main = d3.select('#main').node()
+  d3.select('#main-bg')
+    .style('width', main.clientWidth)
+    .style('height', main.clientHeight)
+}
+
+d3.select(window).on('resize', fixBgSize)
+
+fixBgSize()
+
+
+
+  </script>
   </body>
 </html>
