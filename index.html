@@ -1,6 +1,7 @@
 <html>
   <meta charset="UTF-8">
   <head>
+    <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.8.0/d3.js"></script>
     <style>
@@ -199,6 +200,7 @@ img {
     display: none;
   }
 
+  /* link colours always on on a phone */
   #name {
     color: rgb(255, 217, 3);
   }
@@ -239,7 +241,7 @@ London W1K 5SL<br /></a>
       <div id="bottom-right" class="footer">
 &nbsp;<br />
 Prendre rendez-vous<br />
-au secretariat: <span id="phone-number">+44(0)2077061997</span><br />
+au secretariat: <a id="phone-number" href="tel:+44(0)2077061997">+44(0)2077061997</a><br />
 ou par email: <a id="email" href="mailto:psy@paulinedelbee.com">psy@paulinedelbee.com</a><br />
       </div>
 
