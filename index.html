@@ -65,18 +65,15 @@ body, html {
 
 #main-bg {
   position: absolute;
-  background: url(./bg.jpg);
+  background: url(./bg2.jpg);
   background-size: cover;
   width: 100px;
   height: 100px;
   z-index: -1;
-  opacity: 0.0;
+  opacity: 0.3;
   transition: opacity 5s;
 }
 
-#main-container:hover #main-bg {
-  opacity: 1;
-}
 
 #bottom-left {
   margin-left: var(--margin);
@@ -196,10 +193,6 @@ img {
     margin-top: 20px;
   }
 
-  #main-bg {
-    display: none;
-  }
-
   /* link colours always on on a phone */
   #name {
     color: rgb(255, 217, 3);
@@ -222,14 +215,10 @@ img {
   }
 }
 
-
     </style>
-
   </head>
   <body>
-
     <div id="content">
-
       <div class="heading" id="top-left">PSYCHANALYSE<br /> ET PSYCHOTHERAPIE</div>
       <div class="heading" id="top-right">ENFANT<br /> ET ADULTE</div>
       <span id="main-container">
